@@ -1,4 +1,6 @@
 export default function LinesOfObject(props){
+    
+
     return (
 
         <div>

@@ -4,7 +4,7 @@ import Header from './Header';
 import data from './data';
 import LinesOfObject from './LinesOfObject';
 
-// console.log(data);
+
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
 
     return (
       <LinesOfObject
+      key={item.id}
       line={item.para}
       />
     )
