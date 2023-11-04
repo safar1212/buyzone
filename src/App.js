@@ -10,19 +10,6 @@ import react, {useState} from "react";
 
 function App() {
 
-  
-
-  const [thingsArray, setThingsArray] = useState(["thing 1", "thing 2"])
-
-  console.log(useState);
-
-
-  function addItem(){
-    setThingsArray(PrevthingsArray => {
-      return [...PrevthingsArray, `thing ${PrevthingsArray.length + 1}`]
-    })
-  }
-
 
    let thingsElement = thingsArray.map(thing =><p>{thing}</p>)
 
