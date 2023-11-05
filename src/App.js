@@ -22,6 +22,10 @@ function App() {
       return [ ...prevThingsArray, `Thing ${prevThingsArray.length + 1}`];
       
     })
+
+    // setThingsArray(prevThingsArray =>{
+    //   return [prevThingsArray.push("Thing 3")];
+    // })
   }
 
 
