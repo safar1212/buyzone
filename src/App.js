@@ -10,8 +10,22 @@ import react, {useState} from "react";
 
 function App() {
 
+ 
 
-   let thingsElement = thingsArray.map(thing =><p>{thing}</p>)
+  const [thingsArray, setThingsArray] = useState([])
+
+
+
+  function addItem(){
+    
+    setThingsArray(prevThingsArray => {
+      return [ ...prevThingsArray, `Thing ${prevThingsArray.length + 1}`];
+      
+    })
+  }
+
+
+   let thingsElement = thingsArray.map(thing =><p key={thing}>{thing}</p>)
 
 
 
@@ -19,7 +33,10 @@ function App() {
     <div className="App">
       <Header />
       <Meme />
-      <div onClick={addItem}>
+      <div>
+        <button type='submit' onClick={addItem}>Click me</button>
+      </div>
+      <div >
         {thingsElement}
       </div>
     </div>

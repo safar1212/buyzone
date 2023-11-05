@@ -6,7 +6,7 @@ export default function Meme(){
 
     return (
         <div>
-            <button type="submit" onClick={message} >Click Me</button>
+            {/* <button type="submit" onClick={message} >Click Me</button> */}
         </div>
     )
 }
