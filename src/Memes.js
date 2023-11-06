@@ -4,13 +4,11 @@ import memesData from "./memesData.js";
 export default function Meme() {
   
 
-  const [meme, setMeme] = React.useState(
-     {
-      topText: "",
-      bottomText: "",
-      randomImage: "http://i.imgflip.com/1bij.jpg",
-    },
-  );
+  const [meme, setMeme] = React.useState({
+    topText: "",
+    bottomText: "",
+    randomImage: "https://i.imgflip.com/1g8my4.jpg",
+  });
 
   const [allMemeImage, setAllMemeImage] = React.useState(memesData);
 
