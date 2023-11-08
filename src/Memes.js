@@ -10,7 +10,7 @@ export default function Meme() {
     randomImage: "https://i.imgflip.com/1g8my4.jpg",
   });
 
-  const [allMemeImage, setAllMemeImage] = React.useState(memesData);
+  // const [allMemeImage, setAllMemeImage] = React.useState(memesData);
 
   function getMemeImage() {
     const memesArray = memesData.data.memes;
