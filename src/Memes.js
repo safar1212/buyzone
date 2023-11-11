@@ -17,7 +17,7 @@ export default function Meme() {
     const randomNumber = Math.floor(Math.random() * memesArray.length);
     let url = memesArray[randomNumber].url;
     setMeme(prevState => {
-        return {...prevState, randomImage: url}
+        // return {...prevState, randomImage: url}
     });
   }
 
